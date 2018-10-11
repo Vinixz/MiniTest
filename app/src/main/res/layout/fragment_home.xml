@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/carousel_height"
+            android:layout_marginBottom="@dimen/space_item_margin"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_item_margin"
+            android:layout_marginBottom="@dimen/space_item_margin">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_content_margin"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/subheading"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/space_content_margin"
+                    android:text="Top Rating"/>
+                <android.example.com.minitest.view.component.CustomViewPager
+                    android:id="@+id/vp_top_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.example.com.minitest.view.component.CustomViewPager>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_item_margin"
+            android:layout_marginBottom="@dimen/space_item_margin">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_content_margin"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/subheading"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/space_content_margin"
+                    android:text="Top Views"/>
+                <android.example.com.minitest.view.component.CustomViewPager
+                    android:id="@+id/vp_top_views"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.example.com.minitest.view.component.CustomViewPager>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

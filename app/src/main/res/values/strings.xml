@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MiniTest</string>
+    <string name="title_home">Home</string>
+    <string name="title_box_office">Box Office</string>
+    <string name="title_about_us">About Us</string>
+</resources>
